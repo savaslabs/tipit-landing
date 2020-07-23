@@ -67,7 +67,7 @@
                         </div>
                     </div>
                     <div class="col-md-5 my-auto">
-                        calculator here
+                        <div id="root"></div>
                     </div>
                 </div>
             </div>
@@ -80,6 +80,9 @@
                 </p>
             </div>
         </footer>
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <script type="text/javascript" src="/htdocs/script.js"></script>
     </body>
