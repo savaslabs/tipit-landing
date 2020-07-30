@@ -1,0 +1,32 @@
+body {
+    background-color: #FFFFFF;
+}
+
+.main {
+  color: #000000;
+}
+
+.button {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.footer {
+  background-color: #FFFFFF;
+}
+
+.footer__text {
+    color: #000000;
+}
+
+.calculator {
+	border: 10px solid #000000;
+}
+
+.calculator__top {
+	background-color: #000000;
+}
+
+.calculator__app {
+	border: 10px solid #FFFFFF;
+}
