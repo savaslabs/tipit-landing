@@ -14,7 +14,7 @@ export default function ThemeToggle() {
   }
 
   InputSwitch.addEventListener('change', (event) => {
-    console.log('hi');
+    console.log('test');
   });
 
   return (

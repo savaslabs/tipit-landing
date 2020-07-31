@@ -76,29 +76,6 @@ export default function App() {
     initialAppLoad ? _retrieveData() : _storeData();
   });
 
-  function ThemeToggle() {
-    const context = useTheme(AppContext)
-    const theme = context.theme;
-
-    const [isEnabled, setIsEnabled] = useState(theme === 'light' ? false : true);
-    const toggleInput = () => {
-      setIsEnabled(previousState => !previousState);
-      context.toggleTheme();
-    }
-
-    InputSwitch.addEventListener('change', (event) => {
-      console.log('hi');
-    });
-
-    return (
-        <InputSwitch
-            onChange={toggleInput}
-            checked={isEnabled}
-        />
-    );
-  }
-
-
   return (
     <AppContext.Provider value={userSettings}>
       <div
