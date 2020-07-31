@@ -3,8 +3,11 @@ import { Header } from "./components/Header";
 import { Calculator } from "./components/Calculator";
 import { Footer } from "./components/Footer";
 import AppContext, { useTheme } from "./components/AppContext";
+import ThemeToggle from "./components/ThemeToggle"
 import { themedColors } from "./theme/index";
 import styles from "./theme/appstyles.module.css";
+
+const InputSwitch = document.getElementById('toggle-input');
 
 export default function App() {
   const _storeData = () => {
@@ -72,6 +75,29 @@ export default function App() {
   useEffect(() => {
     initialAppLoad ? _retrieveData() : _storeData();
   });
+
+  function ThemeToggle() {
+    const context = useTheme(AppContext)
+    const theme = context.theme;
+
+    const [isEnabled, setIsEnabled] = useState(theme === 'light' ? false : true);
+    const toggleInput = () => {
+      setIsEnabled(previousState => !previousState);
+      context.toggleTheme();
+    }
+
+    InputSwitch.addEventListener('change', (event) => {
+      console.log('hi');
+    });
+
+    return (
+        <InputSwitch
+            onChange={toggleInput}
+            checked={isEnabled}
+        />
+    );
+  }
+
 
   return (
     <AppContext.Provider value={userSettings}>

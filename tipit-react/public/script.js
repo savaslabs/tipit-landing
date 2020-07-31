@@ -71,22 +71,22 @@ draw();
 // toggle.addEventListener('change', function() {
 //   localStorage.setItem('toggleState', toggle.checked);
 // });
-document.addEventListener('DOMContentLoaded', () => {
-
-    const themeStylesheet = document.getElementById('theme');
-    const storedTheme = localStorage.getItem('theme') == 'true';
-    if (storedTheme) {
-        themeStylesheet.href = storedTheme;
-    }
-    const themeToggle = document.querySelector('.toggle-input');
-    themeToggle.addEventListener('change', () => {
-        localStorage.setItem('toggleState', themeToggle.checked);
-
-        if ( themeStylesheet.href.includes('light') ) {
-            themeStylesheet.href = 'dark-mode.css';
-        } else {
-            themeStylesheet.href = 'light-mode.css';
-        }
-        localStorage.setItem('theme', themeStylesheet.href)
-    });
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//
+//     const themeStylesheet = document.getElementById('theme');
+//     const storedTheme = localStorage.getItem('theme') == 'true';
+//     if (storedTheme) {
+//         themeStylesheet.href = storedTheme;
+//     }
+//     const themeToggle = document.querySelector('.toggle-input');
+//     themeToggle.addEventListener('change', () => {
+//         localStorage.setItem('toggleState', themeToggle.checked);
+//
+//         if ( themeStylesheet.href.includes('light') ) {
+//             themeStylesheet.href = 'dark.css';
+//         } else {
+//             themeStylesheet.href = 'light.css';
+//         }
+//         localStorage.setItem('theme', themeStylesheet.href)
+//     });
+// });
