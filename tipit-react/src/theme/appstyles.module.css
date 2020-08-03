@@ -118,18 +118,6 @@ tr:nth-child(even) {
   line-height: 20px;
 }
 
-.icon {
-  height: 20px;
-  width: 20px;
-  padding: 10px;
-}
-
-.icon:hover {
-  height: 30px;
-  width: 30px;
-  padding: 7px;
-}
-
 a:hover {
   font-weight: bold;
 }

@@ -22,8 +22,6 @@ export const SettingsModal = () => {
     setIsOpen(false);
   }
 
-  console.log(theme);
-
   return (
     <div>
       <Modal
