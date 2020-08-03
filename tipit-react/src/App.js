@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Header } from "./components/Header";
-import { Calculator } from "./components/Calculator";
-import { Footer } from "./components/Footer";
+
 import AppContext, { useTheme } from "./components/AppContext";
-import ThemeToggle from "./components/ThemeToggle"
+import { Landing } from "./components/Landing";
 import { themedColors } from "./theme/index";
-import styles from "./theme/appstyles.module.css";
 
-const InputSwitch = document.getElementById('toggle-input');
+//const InputSwitch = document.getElementById("toggle-input");
 
-export default function App() {
+export const App = () => {
   const _storeData = () => {
     try {
       localStorage.clear();
@@ -78,16 +75,7 @@ export default function App() {
 
   return (
     <AppContext.Provider value={userSettings}>
-      <div
-        className={styles.body}
-        style={{ backgroundColor: colors.background, color: colors.text }}
-      >
-        <div className={styles.container}>
-          <Header />
-          <Calculator />
-          <Footer />
-        </div>
-      </div>
+      <Landing />
     </AppContext.Provider>
   );
-}
+};
