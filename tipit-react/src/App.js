@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 
 import AppContext, { useTheme } from "./components/AppContext";
 import { Landing } from "./components/Landing";
-import { themedColors } from "./theme/index";
-
-//const InputSwitch = document.getElementById("toggle-input");
 
 export const App = () => {
   const _storeData = () => {
@@ -63,11 +60,6 @@ export const App = () => {
     updateTipLowContext,
     updateTipHighContext,
   };
-
-  //This is a repeat of useTheme() in /AppContext
-  const colors = userSettings.theme
-    ? themedColors[userSettings.theme]
-    : themedColors.default;
 
   useEffect(() => {
     initialAppLoad ? _retrieveData() : _storeData();

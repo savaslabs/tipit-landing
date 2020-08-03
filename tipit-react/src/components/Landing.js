@@ -156,14 +156,15 @@ export const Landing = () => {
               </div>
             </div>
             <div className="col-md-5 my-auto">
-              <div className="calculator">
+              <div
+                className="calculator"
+                style={{
+                  backgroundColor: colors.background,
+                  color: colors.text,
+                }}
+              >
                 <span className="calculator__top"></span>
-                <div
-                  style={{
-                    backgroundColor: colors.background,
-                    color: colors.text,
-                  }}
-                >
+                <div className="container">
                   <Header />
                   <Calculator />
                   <Footer />
