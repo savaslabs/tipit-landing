@@ -31,6 +31,7 @@ export const Landing = () => {
                       id="toggle-input"
                       type="checkbox"
                       onChange={context.toggleTheme}
+                      checked={context.theme === "dark"}
                     />
                     <svg
                       className="toggle"
