@@ -4,13 +4,11 @@ import AppContext from "./AppContext";
 
 export default function ThemeToggle() {
   const context = useContext(AppContext);
-  const theme = context.theme;
 
-  const [isEnabled, setIsEnabled] = useState(theme === "light" ? false : true);
-  const toggleInput = () => {
-    setIsEnabled(previousState => !previousState);
-    context.toggleTheme();
-  };
-
-  return <Switch onChange={toggleInput} checked={isEnabled} />;
+  return (
+    <Switch
+      onChange={context.toggleTheme}
+      checked={context.theme === "light" ? false : true}
+    />
+  );
 }
