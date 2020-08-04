@@ -21,14 +21,8 @@ export const Landing = () => {
                 add a little bit of numerical fun to your next bill.
               </p>
               <div className="row h-100">
-                <div className="col-md-5 my-auto">
-                  <button
-                    type="button"
-                    name="button"
-                    className="button button--disabled"
-                  >
-                    Coming Soon
-                  </button>
+                <div className="col-md-5 my-auto highlight__text">
+                  Coming Soon to the App Store & Google Play
                 </div>
                 <div className="col-md-5">
                   <div className="toggle__wrapper">
@@ -177,12 +171,12 @@ export const Landing = () => {
       </main>
       <footer className="footer">
         <div className="container">
-          <p className="footer__text">
-            Powered by:{" "}
-            <a href="https://savaslabs.com" className="footer__link">
-              Savas Labs
-            </a>
-          </p>
+          <p className="footer__text">Powered by</p>
+          <img
+            src={require("../assets/savas-logo-name.svg")}
+            alt={"Savas labs logo"}
+            height="50"
+          />
         </div>
       </footer>
     </>
