@@ -290,7 +290,7 @@ input.toggle-input {
   margin: 0 auto;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  z-index: 0;
+  z-index: 1;
 }
 
 .calculator__app {

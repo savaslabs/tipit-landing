@@ -22,25 +22,47 @@ export const SettingsModal = () => {
     setIsOpen(false);
   }
 
+  const domRect = document
+    .getElementById("tipit-preview")
+    ?.getBoundingClientRect();
+
+  const overlayStyle = {
+    height: domRect?.height - 20,
+    left: domRect?.left,
+    top: domRect?.top,
+    width: domRect?.width,
+    margin: 10,
+    background: null,
+  };
+
   return (
     <div>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={{
+          overlay: overlayStyle,
           content: {
-            top: 20,
-            bottom: 20,
-            margin: "auto",
-            maxWidth: 500,
             backgroundColor: colors.background,
+            border: "none",
+            width: 375,
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            zIndex: -1000,
           },
         }}
       >
         <div className={styles.container}>
           <div
             className={styles.inputRow}
-            style={{ alignItems: "baseline", justifyContent: "space-between" }}
+            style={{
+              marginTop: -10,
+              alignItems: "baseline",
+              justifyContent: "space-between",
+            }}
           >
             <div style={{ paddingLeft: "14%" }}></div>
             <div>

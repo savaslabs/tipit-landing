@@ -156,6 +156,7 @@ export const Landing = () => {
                   backgroundColor: colors.background,
                   color: colors.text,
                 }}
+                id="tipit-preview"
               >
                 <span className="calculator__top"></span>
                 <div className="container">
