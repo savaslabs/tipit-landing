@@ -8,6 +8,82 @@ export const Landing = () => {
   const context = useContext(AppContext);
   const { colors } = context.useTheme();
 
+  const canvasRef = React.useRef(null);
+  const [canvasContext, setCanvasContext] = React.useState(null);
+
+  React.useEffect(() => {
+    if (canvasRef.current) {
+      const ctx = canvasRef.current.getContext("2d");
+
+      ctx.canvas.width = window.innerWidth;
+      ctx.canvas.height = window.innerHeight;
+
+      ctx.font = "20px JetBrains Mono";
+      ctx.fillStyle = "rgba(102, 199, 112, .08)";
+
+      const fontSize = 21;
+      const columns = Math.floor(ctx.canvas.width / fontSize);
+      const rows = Math.floor(ctx.canvas.height / fontSize);
+
+      const binChars = ["0", "1"];
+      const bits = [];
+      const bitHeight = fontSize;
+      const bitWidth = fontSize;
+
+      // Populate array of 'bits'
+      for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < columns; c++) {
+          bits.push({
+            x: c * bitWidth,
+            y: r * bitHeight,
+            value: binChars[Math.floor(Math.random() * binChars.length)],
+            hasDrawn: false,
+          });
+        }
+      }
+
+      // Vars for manually calculating frame rate
+      const fps = 10;
+      const interval = 1000 / fps;
+      let now;
+      let then = Date.now();
+      let delta;
+
+      // Draw all bits once before starting animation
+      for (let bit of bits) {
+        ctx.clearRect(bit.x, bit.y, bitWidth, bitHeight);
+        ctx.fillText(bit.value, bit.x, bit.y + bitHeight);
+        bit.hasDrawn = true;
+      }
+
+      function draw() {
+        const raf = window.requestAnimationFrame(draw);
+        now = Date.now();
+        delta = now - then;
+
+        if (delta > interval) {
+          for (let bit of bits) {
+            if (bit.hasDrawn === true && Math.random() * 100 > 95) {
+              // If passes the randomness check
+              let newVal =
+                bit.value === binChars[1] ? binChars[0] : binChars[1];
+
+              ctx.clearRect(bit.x, bit.y, bitWidth, bitHeight);
+              ctx.fillText(newVal, bit.x, bit.y + bitHeight);
+              bit.value = newVal;
+            }
+          }
+          then = now - (delta % interval);
+        }
+      }
+      draw();
+
+      if (ctx) {
+        setCanvasContext(ctx);
+      }
+    }
+  }, [canvasContext]);
+
   return (
     <>
       <main className="main">
@@ -169,7 +245,7 @@ export const Landing = () => {
             </div>
           </div>
         </div>
-        <canvas id="canvas"></canvas>
+        <canvas id="canvas" ref={canvasRef}></canvas>
       </main>
       <footer className="footer">
         <div className="container">

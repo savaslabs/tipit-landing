@@ -24,10 +24,12 @@ export const App = () => {
     try {
       const value = localStorage.getItem("@store:appContext");
       const savedSettings = JSON.parse(value);
+      const themeStylesheet = document.getElementById("theme");
       if (savedSettings !== null) {
         setDefaultTipLow(savedSettings.defaultTipLow);
         setDefaultTipHigh(savedSettings.defaultTipHigh);
         setTheme(savedSettings.theme);
+        themeStylesheet.href = savedSettings.theme + ".css";
       }
     } catch (error) {
       console.log("No user setting data was retrieved");
@@ -48,6 +50,12 @@ export const App = () => {
   };
 
   const toggleTheme = () => {
+    const themeStylesheet = document.getElementById("theme");
+    if (themeStylesheet.href.includes("light")) {
+      themeStylesheet.href = "dark.css";
+    } else {
+      themeStylesheet.href = "light.css";
+    }
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
 
