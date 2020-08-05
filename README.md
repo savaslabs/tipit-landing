@@ -15,7 +15,8 @@ Documentation: https://facebook.github.io/create-react-app/docs/making-a-progres
 
 ## Deployment
 
-- @todo
+- Run `yarn deploy` to deploy to https://savaslabs.github.io/tipit-landing/
+- Note: this will automatically update the `gh-pages` branch
 
 ## Contributors
 
