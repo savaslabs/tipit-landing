@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Header } from "./components/Header";
-import { Calculator } from "./components/Calculator";
-import { Footer } from "./components/Footer";
+
 import AppContext, { useTheme } from "./components/AppContext";
-import ThemeToggle from "./components/ThemeToggle"
-import { themedColors } from "./theme/index";
-import styles from "./theme/appstyles.module.css";
+import { Landing } from "./components/Landing";
 
-const InputSwitch = document.getElementById('toggle-input');
-
-export default function App() {
+export const App = () => {
   const _storeData = () => {
     try {
       localStorage.clear();
@@ -30,10 +24,12 @@ export default function App() {
     try {
       const value = localStorage.getItem("@store:appContext");
       const savedSettings = JSON.parse(value);
+      const themeStylesheet = document.getElementById("theme");
       if (savedSettings !== null) {
         setDefaultTipLow(savedSettings.defaultTipLow);
         setDefaultTipHigh(savedSettings.defaultTipHigh);
         setTheme(savedSettings.theme);
+        themeStylesheet.href = savedSettings.theme + ".css";
       }
     } catch (error) {
       console.log("No user setting data was retrieved");
@@ -54,6 +50,12 @@ export default function App() {
   };
 
   const toggleTheme = () => {
+    const themeStylesheet = document.getElementById("theme");
+    if (themeStylesheet.href.includes("light")) {
+      themeStylesheet.href = "dark.css";
+    } else {
+      themeStylesheet.href = "light.css";
+    }
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
 
@@ -67,27 +69,13 @@ export default function App() {
     updateTipHighContext,
   };
 
-  //This is a repeat of useTheme() in /AppContext
-  const colors = userSettings.theme
-    ? themedColors[userSettings.theme]
-    : themedColors.default;
-
   useEffect(() => {
     initialAppLoad ? _retrieveData() : _storeData();
   });
 
   return (
     <AppContext.Provider value={userSettings}>
-      <div
-        className={styles.body}
-        style={{ backgroundColor: colors.background, color: colors.text }}
-      >
-        <div className={styles.container}>
-          <Header />
-          <Calculator />
-          <Footer />
-        </div>
-      </div>
+      <Landing />
     </AppContext.Provider>
   );
-}
+};

@@ -1,18 +1,18 @@
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
 let raf;
 
-ctx.canvas.width  = window.innerWidth;
+ctx.canvas.width = window.innerWidth;
 ctx.canvas.height = window.innerHeight;
 
-ctx.font = '20px JetBrains Mono';
-ctx.fillStyle = 'rgba(102, 199, 112, .08)';
+ctx.font = "20px JetBrains Mono";
+ctx.fillStyle = "rgba(102, 199, 112, .08)";
 
 const fontSize = 21;
 const columns = Math.floor(canvas.width / fontSize);
 const rows = Math.floor(canvas.height / fontSize);
 
-const binChars = ['0', '1'];
+const binChars = ["0", "1"];
 const bits = [];
 const bitHeight = fontSize;
 const bitWidth = fontSize;
@@ -24,14 +24,14 @@ for (let r = 0; r < rows; r++) {
       x: c * bitWidth,
       y: r * bitHeight,
       value: binChars[Math.floor(Math.random() * binChars.length)],
-      hasDrawn: false
+      hasDrawn: false,
     });
   }
 }
 
 // Vars for manually calculating frame rate
 const fps = 10;
-const interval = 1000/fps;
+const interval = 1000 / fps;
 let now;
 let then = Date.now();
 let delta;
@@ -50,8 +50,9 @@ function draw() {
 
   if (delta > interval) {
     for (let bit of bits) {
-      if (bit.hasDrawn === true && (Math.random() * 100) > 95) { // If passes the randomness check
-        let newVal = (bit.value === binChars[1]) ? binChars[0] : binChars[1];
+      if (bit.hasDrawn === true && Math.random() * 100 > 95) {
+        // If passes the randomness check
+        let newVal = bit.value === binChars[1] ? binChars[0] : binChars[1];
 
         ctx.clearRect(bit.x, bit.y, bitWidth, bitHeight);
         ctx.fillText(newVal, bit.x, bit.y + bitHeight);
