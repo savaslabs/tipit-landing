@@ -1,25 +1,24 @@
 {
   "files": {
-    "main.css": "/tipit-landing/static/css/main.d9dafffb.chunk.css",
-    "main.js": "/tipit-landing/static/js/main.4da5f391.chunk.js",
-    "main.js.map": "/tipit-landing/static/js/main.4da5f391.chunk.js.map",
+    "main.css": "/tipit-landing/static/css/main.1197302c.chunk.css",
+    "main.js": "/tipit-landing/static/js/main.14cd7c54.chunk.js",
+    "main.js.map": "/tipit-landing/static/js/main.14cd7c54.chunk.js.map",
     "runtime-main.js": "/tipit-landing/static/js/runtime-main.92b91ad6.js",
     "runtime-main.js.map": "/tipit-landing/static/js/runtime-main.92b91ad6.js.map",
-    "static/js/2.76b8bf9d.chunk.js": "/tipit-landing/static/js/2.76b8bf9d.chunk.js",
-    "static/js/2.76b8bf9d.chunk.js.map": "/tipit-landing/static/js/2.76b8bf9d.chunk.js.map",
+    "static/js/2.5f1a1b83.chunk.js": "/tipit-landing/static/js/2.5f1a1b83.chunk.js",
+    "static/js/2.5f1a1b83.chunk.js.map": "/tipit-landing/static/js/2.5f1a1b83.chunk.js.map",
     "index.html": "/tipit-landing/index.html",
-    "precache-manifest.512299c3c8c1b9eb2d6be5be382844f5.js": "/tipit-landing/precache-manifest.512299c3c8c1b9eb2d6be5be382844f5.js",
+    "precache-manifest.86cc06467f18ebcf876c44c24a56b93b.js": "/tipit-landing/precache-manifest.86cc06467f18ebcf876c44c24a56b93b.js",
     "service-worker.js": "/tipit-landing/service-worker.js",
-    "static/css/main.d9dafffb.chunk.css.map": "/tipit-landing/static/css/main.d9dafffb.chunk.css.map",
-    "static/js/2.76b8bf9d.chunk.js.LICENSE.txt": "/tipit-landing/static/js/2.76b8bf9d.chunk.js.LICENSE.txt",
+    "static/css/main.1197302c.chunk.css.map": "/tipit-landing/static/css/main.1197302c.chunk.css.map",
+    "static/js/2.5f1a1b83.chunk.js.LICENSE.txt": "/tipit-landing/static/js/2.5f1a1b83.chunk.js.LICENSE.txt",
     "static/media/ava-blue.svg": "/tipit-landing/static/media/ava-blue.256311d1.svg",
     "static/media/dashes-white.svg": "/tipit-landing/static/media/dashes-white.69f83b20.svg",
     "static/media/dashes.svg": "/tipit-landing/static/media/dashes.188e66f7.svg",
     "static/media/info-white.svg": "/tipit-landing/static/media/info-white.023d2d3e.svg",
     "static/media/info.svg": "/tipit-landing/static/media/info.a21bafa4.svg",
     "static/media/labs.svg": "/tipit-landing/static/media/labs.c7c96ed0.svg",
-    "static/media/savas-logo-name-dark.svg": "/tipit-landing/static/media/savas-logo-name-dark.aae17549.svg",
-    "static/media/savas-logo-name.svg": "/tipit-landing/static/media/savas-logo-name.06fb7ad9.svg",
+    "static/media/savas-logo-name.svg": "/tipit-landing/static/media/savas-logo-name.66722f83.svg",
     "static/media/settings-white.svg": "/tipit-landing/static/media/settings-white.89059317.svg",
     "static/media/settings.svg": "/tipit-landing/static/media/settings.6ae6bc54.svg",
     "static/media/x-close-pink.svg": "/tipit-landing/static/media/x-close-pink.af3523aa.svg",
@@ -27,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.92b91ad6.js",
-    "static/js/2.76b8bf9d.chunk.js",
-    "static/css/main.d9dafffb.chunk.css",
-    "static/js/main.4da5f391.chunk.js"
+    "static/js/2.5f1a1b83.chunk.js",
+    "static/css/main.1197302c.chunk.css",
+    "static/js/main.14cd7c54.chunk.js"
   ]
 }
