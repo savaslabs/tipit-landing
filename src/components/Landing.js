@@ -251,7 +251,11 @@ export const Landing = () => {
         <div className="container">
           <p className="footer__text">Powered by</p>
           <img
-            src={require("../assets/savas-logo-name.svg")}
+            src={
+              context.theme === "light"
+                ? require("../assets/savas-logo-name.svg")
+                : require("../assets/savas-logo-name-dark.svg")
+            }
             alt={"Savas labs logo"}
             height="50"
           />
