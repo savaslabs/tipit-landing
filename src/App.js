@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import AppContext, { useTheme } from "./components/AppContext";
 import { Landing } from "./components/Landing";
 
@@ -52,9 +51,9 @@ export const App = () => {
   const toggleTheme = () => {
     const themeStylesheet = document.getElementById("theme");
     if (themeStylesheet.href.includes("light")) {
-      themeStylesheet.href = "dark.css";
+      themeStylesheet.href = "/tipit-landing/dark.css";
     } else {
-      themeStylesheet.href = "light.css";
+      themeStylesheet.href = "/tipit-landing/light.css";
     }
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
