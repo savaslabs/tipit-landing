@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b5890a89b6d71cb200ca4396fe2b7046",
+    "revision": "9a5f70427ab31d660990fa3f60951abb",
     "url": "/tipit-landing/index.html"
   },
   {
-    "revision": "55499bb9fd30df3f11d9",
-    "url": "/tipit-landing/static/css/main.1197302c.chunk.css"
+    "revision": "ae69b24f6a1c6d7642bd",
+    "url": "/tipit-landing/static/css/main.d9dafffb.chunk.css"
   },
   {
-    "revision": "8240c059ce5c63a2c7b9",
-    "url": "/tipit-landing/static/js/2.5f1a1b83.chunk.js"
+    "revision": "0eff042c19845b0d8ad0",
+    "url": "/tipit-landing/static/js/2.76b8bf9d.chunk.js"
   },
   {
     "revision": "b948d2a7727b83687a00ec53ef5267c0",
-    "url": "/tipit-landing/static/js/2.5f1a1b83.chunk.js.LICENSE.txt"
+    "url": "/tipit-landing/static/js/2.76b8bf9d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "55499bb9fd30df3f11d9",
-    "url": "/tipit-landing/static/js/main.14cd7c54.chunk.js"
+    "revision": "ae69b24f6a1c6d7642bd",
+    "url": "/tipit-landing/static/js/main.4da5f391.chunk.js"
   },
   {
     "revision": "b9382f343e820437dfe6",
@@ -48,8 +48,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tipit-landing/static/media/labs.c7c96ed0.svg"
   },
   {
-    "revision": "66722f83de0d313119d49ec839d1435a",
-    "url": "/tipit-landing/static/media/savas-logo-name.66722f83.svg"
+    "revision": "aae1754906992e2001f275d8bcbb5674",
+    "url": "/tipit-landing/static/media/savas-logo-name-dark.aae17549.svg"
+  },
+  {
+    "revision": "06fb7ad9934610afaabd0e01f3ebd87d",
+    "url": "/tipit-landing/static/media/savas-logo-name.06fb7ad9.svg"
   },
   {
     "revision": "89059317af4643570e57ffa95018dddb",
