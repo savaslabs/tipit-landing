@@ -30,7 +30,7 @@ export const SettingsModal = () => {
     height: domRect?.height - 20,
     left: domRect?.left,
     top: domRect?.top,
-    width: domRect?.width,
+    width: domRect?.width - 20,
     margin: 10,
     background: null,
   };
@@ -45,13 +45,13 @@ export const SettingsModal = () => {
           content: {
             backgroundColor: colors.background,
             border: "none",
-            width: 375,
+            width: "auto",
+            width: overlayStyle.width,
             position: "absolute",
             top: 0,
             left: 0,
             right: 0,
             bottom: 0,
-            zIndex: -1000,
           },
         }}
       >

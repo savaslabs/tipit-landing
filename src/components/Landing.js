@@ -88,7 +88,7 @@ export const Landing = () => {
     <>
       <main className="main">
         <div className="container h-100">
-          <div className="row h-100">
+          <div className="row h-100 justify-center">
             <div className="col-md-7 my-auto">
               <h1>tipit</h1>
               <p className="main__text pb-4">
@@ -96,11 +96,11 @@ export const Landing = () => {
                 Excellent question! Tipit quickly calculates gratuity that will
                 add a little bit of numerical fun to your next bill.
               </p>
-              <div className="row h-100">
-                <div className="col-md-5 my-auto highlight__text">
+              <div className="row h-100 my-auto">
+                <div className="col-sm-5 highlight__text">
                   Coming Soon to the App Store & Google Play
                 </div>
-                <div className="col-md-5">
+                <div className="col-sm-5 my-auto">
                   <div className="toggle__wrapper">
                     <input
                       className="toggle-input"
@@ -226,7 +226,7 @@ export const Landing = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-5 my-auto">
+            <div className="col-md-5 my-auto flex flex-row items-center content-center">
               <div
                 className="calculator"
                 style={{
