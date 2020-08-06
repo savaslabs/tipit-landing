@@ -126,7 +126,6 @@ a:focus {
 
 .tableWrapper {
   overflow: hidden;
-  overflow-y: scroll;
   max-height: 50vh;
-  padding: 5px;
+  width: 100%;
 }

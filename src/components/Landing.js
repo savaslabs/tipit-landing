@@ -89,8 +89,8 @@ export const Landing = () => {
       <main className="main">
         <div className="container h-100">
           <div className="row h-100 justify-center">
-            <div className="col-md-7 my-auto">
-              <h1>tipit</h1>
+            <div className="col-md-7 my-auto mr-">
+              <h1 className="my-4">tipit</h1>
               <p className="main__text pb-4">
                 Why leave boring tip amounts when you can tip in palindrome?
                 Excellent question! Tipit quickly calculates gratuity that will
@@ -236,7 +236,7 @@ export const Landing = () => {
                 id="tipit-preview"
               >
                 <span className="calculator__top"></span>
-                <div className="container">
+                <div className="w-100">
                   <Header />
                   <Calculator />
                   <Footer />
