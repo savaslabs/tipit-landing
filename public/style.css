@@ -237,10 +237,6 @@ input.toggle-input {
   fill: #000000;
 }
 
-.toggle:focus {
-  outline: blue;
-}
-
 .toggle-input:checked + .toggle .moon {
   fill: #333333;
 }
