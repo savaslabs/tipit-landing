@@ -21,6 +21,7 @@ export const CurrencyInput = ({ value, onChange, ...props }) => {
             paddingLeft: 5,
             backgroundColor: colors.background,
             color: colors.text,
+            maxWidth: 150,
           }}
           type="number"
           min="0"
