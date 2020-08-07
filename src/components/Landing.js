@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import AppContext from "./AppContext";
 import { Header } from "./Header";
 import { Calculator } from "./Calculator";
@@ -8,6 +8,13 @@ export const Landing = () => {
   const context = useContext(AppContext);
   const { colors } = context.useTheme();
 
+  // Simulate a focus state for the dark mode toggle.
+  const [stroke, setStroke] = useState("none");
+  const handleToggleFocus = () => {
+    stroke === "none" ? setStroke("lightgray") : setStroke("none");
+  };
+
+  // Initiate the background digit animation.
   const canvasRef = React.useRef(null);
   const [canvasContext, setCanvasContext] = React.useState(null);
 
@@ -109,6 +116,9 @@ export const Landing = () => {
                       type="checkbox"
                       onChange={context.toggleTheme}
                       checked={context.theme === "dark"}
+                      aria-label="Dark mode toggle"
+                      onFocus={handleToggleFocus}
+                      onBlur={handleToggleFocus}
                     />
                     <svg
                       className="toggle"
@@ -126,6 +136,8 @@ export const Landing = () => {
                           height="58"
                           rx="29"
                           fill="white"
+                          stroke={stroke}
+                          stroke-width="4"
                         />
                       </g>
                       <rect
@@ -251,15 +263,17 @@ export const Landing = () => {
       <footer className="footer">
         <div className="container">
           <p className="footer__text">Powered by</p>
-          <img
-            src={
-              context.theme === "light"
-                ? require("../assets/savas-logo-name.svg")
-                : require("../assets/savas-logo-name-dark.svg")
-            }
-            alt={"Savas labs logo"}
-            height="50"
-          />
+          <a href="https://www.savaslabs.com/">
+            <img
+              src={
+                context.theme === "light"
+                  ? require("../assets/savas-logo-name.svg")
+                  : require("../assets/savas-logo-name-dark.svg")
+              }
+              alt={"Savas labs logo"}
+              height="50"
+            />
+          </a>
         </div>
       </footer>
     </>

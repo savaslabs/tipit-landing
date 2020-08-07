@@ -16,6 +16,9 @@ export const PercentInput = ({ value, onChange, ...props }) => {
           color: colors.text,
         }}
       >
+        <label style={{ display: "none" }} for={props.id}>
+          {props.id}
+        </label>
         <input
           style={{
             minWidth: 40,
@@ -30,6 +33,7 @@ export const PercentInput = ({ value, onChange, ...props }) => {
           step="1"
           value={value}
           onChange={e => onChange(e.target.value)}
+          id={props.id}
         />
         <span className={styles.label} style={{ marginLeft: -20 }}>
           %

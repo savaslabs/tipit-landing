@@ -175,27 +175,29 @@ export const Calculator = () => {
           </label>
           <div className={styles.helper}>Pre-tip amount</div>
         </div>
-        <CurrencyInput label="Bill" value={bill} onChange={handleBill} />
+        <CurrencyInput
+          id="bill"
+          label="Bill"
+          value={bill}
+          onChange={handleBill}
+        />
       </div>
       <div className={styles.inputRow} style={{ marginTop: 20 }}>
         <div style={{ textAlign: "left" }}>
-          <label
-            htmlFor="tip range"
-            name="tip range"
-            id="tip range"
-            aria-label="Tip range low to high"
-            className={styles.label}
-          >
-            Tip Range:
-          </label>
+          <div className={styles.label}>Tip Range:</div>
           <div className={styles.helper}>Low to high</div>
         </div>
         <div className={styles.inputGroup}>
-          <PercentInput value={context.defaultTipLow} onChange={handleTipLow} />
+          <PercentInput
+            id="Tip percentage low"
+            value={context.defaultTipLow}
+            onChange={handleTipLow}
+          />
           <div className={styles.normalText} style={{ paddingRight: 5 }}>
             to
           </div>
           <PercentInput
+            id="Tip percentage high"
             value={context.defaultTipHigh}
             onChange={handleTipHigh}
           />
