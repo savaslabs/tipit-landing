@@ -173,6 +173,7 @@ h1 {
   left: 0;
   padding: 20px 0;
   height: 120px;
+  z-index: 2;
 }
 
 .footer__text {
@@ -234,6 +235,10 @@ input.toggle-input {
 
 .toggle-input:hover + .toggle .moon {
   fill: #000000;
+}
+
+.toggle:focus {
+  outline: blue;
 }
 
 .toggle-input:checked + .toggle .moon {
