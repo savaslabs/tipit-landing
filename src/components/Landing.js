@@ -109,6 +109,7 @@ export const Landing = () => {
                       type="checkbox"
                       onChange={context.toggleTheme}
                       checked={context.theme === "dark"}
+                      aria-label="Dark mode toggle"
                     />
                     <svg
                       className="toggle"
