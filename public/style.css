@@ -173,6 +173,7 @@ h1 {
   left: 0;
   padding: 20px 0;
   height: 120px;
+  z-index: 2;
 }
 
 .footer__text {
