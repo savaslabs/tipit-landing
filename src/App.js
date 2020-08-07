@@ -28,7 +28,7 @@ export const App = () => {
         setDefaultTipLow(savedSettings.defaultTipLow);
         setDefaultTipHigh(savedSettings.defaultTipHigh);
         setTheme(savedSettings.theme);
-        themeStylesheet.href = "./" + savedSettings.theme + ".css";
+        themeStylesheet.href = "/tipit-landing/" + savedSettings.theme + ".css";
       }
     } catch (error) {
       console.log("No user setting data was retrieved");

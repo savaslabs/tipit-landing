@@ -88,19 +88,20 @@ export const Landing = () => {
     <>
       <main className="main">
         <div className="container h-100">
-          <div className="row h-100">
+          <div className="row h-100 justify-space-between">
             <div className="col-md-7 my-auto">
-              <h1>tipit</h1>
+              <h1 className="my-4">tipit</h1>
               <p className="main__text pb-4">
                 Why leave boring tip amounts when you can tip in palindrome?
                 Excellent question! Tipit quickly calculates gratuity that will
                 add a little bit of numerical fun to your next bill.
               </p>
-              <div className="row h-100">
-                <div className="col-md-5 my-auto highlight__text">
-                  Coming Soon to the App Store & Google Play
+              <div className="row w-100 my-auto justify-content-between">
+                <div className="col-lg-6 highlight__text my-auto">
+                  Coming Soon to the <br />
+                  App Store & Google Play
                 </div>
-                <div className="col-md-5">
+                <div className="col-lg m-auto">
                   <div className="toggle__wrapper">
                     <input
                       className="toggle-input"
@@ -226,7 +227,7 @@ export const Landing = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-5 my-auto">
+            <div className="col-sm">
               <div
                 className="calculator"
                 style={{
@@ -236,7 +237,7 @@ export const Landing = () => {
                 id="tipit-preview"
               >
                 <span className="calculator__top"></span>
-                <div className="container">
+                <div className="w-100">
                   <Header />
                   <Calculator />
                   <Footer />
@@ -251,7 +252,11 @@ export const Landing = () => {
         <div className="container">
           <p className="footer__text">Powered by</p>
           <img
-            src={require("../assets/savas-logo-name.svg")}
+            src={
+              context.theme === "light"
+                ? require("../assets/savas-logo-name.svg")
+                : require("../assets/savas-logo-name-dark.svg")
+            }
             alt={"Savas labs logo"}
             height="50"
           />
