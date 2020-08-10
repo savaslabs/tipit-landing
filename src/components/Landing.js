@@ -96,7 +96,7 @@ export const Landing = () => {
       <main className="main">
         <div className="container h-100">
           <div className="row h-100 justify-space-between">
-            <div className="col-md-7 my-auto">
+            <div className="col-lg-7 my-auto">
               <h1 className="my-4">tipit</h1>
               <p className="main__text pb-4">
                 Why leave boring tip amounts when you can tip in palindrome?
@@ -239,7 +239,7 @@ export const Landing = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm">
+            <div className="col-lg">
             <div style={{
               display: `flex`,
               justifyContent: `center`,
