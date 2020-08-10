@@ -101,6 +101,10 @@ th {
   text-align: left;
 }
 
+th:last-of-type {
+  text-align: right;
+}
+
 tr {
   font-size: 18;
   line-height: 45px;
@@ -134,4 +138,15 @@ a:focus {
   height: calc(100vh - 500px);
   width: calc(100% + 34px);
   padding-right: 17px;
+}
+
+td:last-of-type {
+  text-align: right;
+}
+
+@media screen and (max-width: 500px) {
+  th:last-of-type,
+  td:last-of-type {
+    text-align: left;
+  }
 }

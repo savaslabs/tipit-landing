@@ -17,7 +17,7 @@ export const Results = ({ results }) => {
           <td key={tip} style={{ textAlign: "left" }}>
             ${tip}
           </td>
-          <td key={total} style={{ textAlign: "right" }}>
+          <td key={total} className="total__td">
             = ${total}
           </td>
         </tr>
@@ -38,7 +38,7 @@ export const Results = ({ results }) => {
             </th>
             <th
               scope="col"
-              style={{ textAlign: "right", background: colors.background }}
+              style={{ background: colors.background }}
             >
               Total
             </th>
