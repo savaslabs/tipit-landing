@@ -240,6 +240,22 @@ export const Landing = () => {
               </div>
             </div>
             <div className="col-sm">
+            <div style={{
+              display: `flex`,
+              justifyContent: `center`,
+              marginTop: `5%`
+            }}>
+            <p style={{
+              fontSize: `21px`,
+              fontWeight: `600`,
+              marginRight: `10px`
+            }} >
+              try me
+            </p>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8246 0H10.4153V16.1029H0L13.5964 27.9997L27.1927 16.1029H16.8246V0Z" fill="black"/>
+              </svg>
+            </div>
               <div
                 className="calculator"
                 style={{
