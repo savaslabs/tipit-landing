@@ -30,3 +30,7 @@ body {
 .calculator__app {
 	border: 10px solid #FFFFFF;
 }
+
+.try-me__arrow {
+  fill: #000000;
+}

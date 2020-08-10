@@ -253,7 +253,7 @@ export const Landing = () => {
               try me
             </p>
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8246 0H10.4153V16.1029H0L13.5964 27.9997L27.1927 16.1029H16.8246V0Z" fill="black"/>
+                <path className="try-me__arrow" fill-rule="evenodd" clip-rule="evenodd" d="M16.8246 0H10.4153V16.1029H0L13.5964 27.9997L27.1927 16.1029H16.8246V0Z"/>
               </svg>
             </div>
               <div
