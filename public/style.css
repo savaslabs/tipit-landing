@@ -232,9 +232,11 @@ input.toggle-input {
   z-index: 2;
   opacity: 0;
   width: 200px;
+  margin-left: 20px;
 }
 
-.toggle-input:hover + .toggle .moon {
+.toggle-input:hover + .toggle .moon,
+.toggle-input:hover + .toggle .sun .sun__part {
   fill: #000000;
 }
 
