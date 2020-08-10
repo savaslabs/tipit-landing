@@ -287,7 +287,7 @@ export const Landing = () => {
                   : require("../assets/savas-logo-name-dark.svg")
               }
               alt={"Savas labs logo"}
-              height="50"
+              height="40"
             />
           </a>
         </div>

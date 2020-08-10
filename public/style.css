@@ -142,7 +142,7 @@ h1 {
 }
 
 .main {
-  height: calc(100vh - 120px);
+  height: calc(100vh - 100px);
   overflow-x: hidden;
 }
 
@@ -172,14 +172,14 @@ h1 {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 20px 0;
-  height: 120px;
+  padding: 10px 0;
+  height: 100px;
   z-index: 2;
 }
 
 .footer__text {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 19px;
+  line-height: 28px;
   font-weight: 600;
   margin: 0;
 }
