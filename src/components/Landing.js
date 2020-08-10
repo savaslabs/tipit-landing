@@ -265,7 +265,9 @@ export const Landing = () => {
                 id="tipit-preview"
               >
                 <span className="calculator__top"></span>
-                <div className="w-100">
+                <div className="w-100" style={{
+                  overflow: `hidden`
+                }}>
                   <Header />
                   <Calculator />
                   <Footer />
