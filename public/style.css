@@ -155,6 +155,7 @@ h1 {
   font-size: 22px;
   font-weight: 600;
   min-width: 340px;
+  line-height: 30px;
 }
 
 .button {
