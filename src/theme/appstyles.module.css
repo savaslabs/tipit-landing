@@ -95,6 +95,10 @@ table {
 th {
   font-size: 14px;
   line-height: 30px;
+  top: 0;
+  z-index: 2;
+  position: sticky;
+  text-align: left;
 }
 
 tr {
@@ -126,6 +130,7 @@ a:focus {
 
 .tableWrapper {
   overflow: hidden;
-  max-height: 50vh;
-  width: 100%;
+  overflow-y: scroll;
+  height: calc(100vh - 500px);
+  width: 105%;
 }
