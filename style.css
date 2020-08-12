@@ -314,3 +314,23 @@ input.toggle-input {
 canvas {
   overflow: hidden;
 }
+
+@media screen and (max-width: 991px) {
+  .toggle__wrapper {
+    text-align: left;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .calculator {
+    min-width: 90%;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .calculator {
+    height: 80%;
+  }
+}
