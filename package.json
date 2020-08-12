@@ -20,7 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn build",
+    "build-clean-up": "mkdir tipit-landing && mv ./build/* ./tipit-landing/ && mv ./tipit-landing/index.html ./build && mv ./tipit-landing/ ./build/ && cp ./CNAME ./build",
+    "predeploy": "yarn build && yarn build-clean-up",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
