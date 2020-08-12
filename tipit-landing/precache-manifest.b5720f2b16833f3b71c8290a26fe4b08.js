@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3478834fe20db31aa39d93a1422fe626",
+    "revision": "353beb4782441238e3d771ce954aef54",
     "url": "/tipit-landing/index.html"
   },
   {
-    "revision": "1898015cced4f4e36ef4",
+    "revision": "b6a76a3135143748d663",
     "url": "/tipit-landing/static/css/main.55d8e6aa.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tipit-landing/static/js/2.76b8bf9d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1898015cced4f4e36ef4",
-    "url": "/tipit-landing/static/js/main.8f091d88.chunk.js"
+    "revision": "b6a76a3135143748d663",
+    "url": "/tipit-landing/static/js/main.22b33105.chunk.js"
   },
   {
     "revision": "b9382f343e820437dfe6",
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tipit-landing/static/media/savas-logo-name-dark.aae17549.svg"
   },
   {
-    "revision": "17211e2bd17c7478f3a270f3f2c2b7d4",
-    "url": "/tipit-landing/static/media/savas-logo-name.17211e2b.svg"
+    "revision": "06fb7ad9934610afaabd0e01f3ebd87d",
+    "url": "/tipit-landing/static/media/savas-logo-name.06fb7ad9.svg"
   },
   {
     "revision": "89059317af4643570e57ffa95018dddb",
