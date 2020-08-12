@@ -7,7 +7,7 @@ export const Results = ({ results }) => {
   const { colors } = context.useTheme();
 
   const renderTableData = () => {
-    return results.map(result => {
+    return results?.map(result => {
       const { bill, tip, total } = result; //destructuring
       return (
         <tr key={tip}>
@@ -36,10 +36,7 @@ export const Results = ({ results }) => {
             <th scope="col" style={{ background: colors.background }}>
               Tip
             </th>
-            <th
-              scope="col"
-              style={{ background: colors.background }}
-            >
+            <th scope="col" style={{ background: colors.background }}>
               Total
             </th>
           </tr>

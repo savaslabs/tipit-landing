@@ -134,19 +134,31 @@ export const Calculator = () => {
       const allTotalArray = arrayTipsAndTotals(billFloat, tipArray);
       const palTotalArray = findPalTotals(billFloat, tipArray);
 
-      if (palTotalArray && palTotalArray.length) {
+      console.log(allTotalArray);
+
+      if (palTotalArray && palTotalArray.length > 0) {
         //both tip & total are arrays
-        setMessage(
-          "Woot! There are " +
-            palTotalArray.length +
-            " ways for the tip AND total to be palindromes!"
-        );
+        palTotalArray.length > 1
+          ? setMessage(
+              "Woot! There are " +
+                palTotalArray.length +
+                " ways for the tip AND total to be palindromes!"
+            )
+          : setMessage(
+              "Woot! There is one way for the tip AND total to be palindromes!"
+            );
         return palTotalArray;
-      } else if (tipArray && tipArray.length) {
-        setMessage("You can tip in " + tipArray.length + " palindromes!");
+      } else if (tipArray && tipArray.length > 0) {
+        tipArray.length > 1
+          ? setMessage("You can tip in " + tipArray.length + " palindromes!")
+          : setMessage("You can tip in one palindrome!");
         return allTotalArray;
+      } else {
+        console.log("no results");
+        setMessage("Sorry, no results.");
+        return [];
       }
-    } else return [];
+    }
   };
 
   useEffect(() => {
@@ -213,7 +225,7 @@ export const Calculator = () => {
             alignItems: "flex-end",
           }}
         >
-          {results.length > 0 && (
+          {results && (
             <div
               className={styles.inputRow}
               style={{ width: "100%", alignItems: "flex-end" }}
@@ -237,7 +249,7 @@ export const Calculator = () => {
         <div>
           <Dashes />
           {/* If there are results, print the results table. */}
-          {results.length > 0 && <Results results={results} />}
+          {results?.length > 0 && <Results results={results} />}
         </div>
       </React.Fragment>
     </div>
