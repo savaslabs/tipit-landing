@@ -8,7 +8,11 @@
       "type": "image/x-icon"
     },
     {
+<<<<<<< HEAD
+      "src": "ava-round.png",
+=======
       "src": "android-chrome-192x192.png",
+>>>>>>> develop
       "type": "image/png",
       "sizes": "256x256"
     }
