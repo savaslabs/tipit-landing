@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/tipit-landing/static/css/main.55d8e6aa.chunk.css",
+    "main.js": "/tipit-landing/static/js/main.46c434a0.chunk.js",
+    "main.js.map": "/tipit-landing/static/js/main.46c434a0.chunk.js.map",
+    "runtime-main.js": "/tipit-landing/static/js/runtime-main.92b91ad6.js",
+    "runtime-main.js.map": "/tipit-landing/static/js/runtime-main.92b91ad6.js.map",
+    "static/js/2.76b8bf9d.chunk.js": "/tipit-landing/static/js/2.76b8bf9d.chunk.js",
+    "static/js/2.76b8bf9d.chunk.js.map": "/tipit-landing/static/js/2.76b8bf9d.chunk.js.map",
+    "index.html": "/tipit-landing/index.html",
+    "precache-manifest.746ff5b6f560b7e9d0f196299c6523a9.js": "/tipit-landing/precache-manifest.746ff5b6f560b7e9d0f196299c6523a9.js",
+    "service-worker.js": "/tipit-landing/service-worker.js",
+    "static/css/main.55d8e6aa.chunk.css.map": "/tipit-landing/static/css/main.55d8e6aa.chunk.css.map",
+    "static/js/2.76b8bf9d.chunk.js.LICENSE.txt": "/tipit-landing/static/js/2.76b8bf9d.chunk.js.LICENSE.txt",
+    "static/media/ava-blue.svg": "/tipit-landing/static/media/ava-blue.256311d1.svg",
+    "static/media/dashes-white.svg": "/tipit-landing/static/media/dashes-white.69f83b20.svg",
+    "static/media/dashes.svg": "/tipit-landing/static/media/dashes.188e66f7.svg",
+    "static/media/info-white.svg": "/tipit-landing/static/media/info-white.023d2d3e.svg",
+    "static/media/info.svg": "/tipit-landing/static/media/info.a21bafa4.svg",
+    "static/media/labs.svg": "/tipit-landing/static/media/labs.c7c96ed0.svg",
+    "static/media/savas-logo-name-dark.svg": "/tipit-landing/static/media/savas-logo-name-dark.aae17549.svg",
+    "static/media/savas-logo-name.svg": "/tipit-landing/static/media/savas-logo-name.06fb7ad9.svg",
+    "static/media/settings-white.svg": "/tipit-landing/static/media/settings-white.89059317.svg",
+    "static/media/settings.svg": "/tipit-landing/static/media/settings.6ae6bc54.svg",
+    "static/media/x-close-pink.svg": "/tipit-landing/static/media/x-close-pink.af3523aa.svg",
+    "static/media/x-close.svg": "/tipit-landing/static/media/x-close.749fc1ce.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92b91ad6.js",
+    "static/js/2.76b8bf9d.chunk.js",
+    "static/css/main.55d8e6aa.chunk.css",
+    "static/js/main.46c434a0.chunk.js"
+  ]
+}
