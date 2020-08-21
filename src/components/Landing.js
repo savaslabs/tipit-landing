@@ -3,6 +3,7 @@ import AppContext from "./AppContext";
 import { Header } from "./Header";
 import { Calculator } from "./Calculator";
 import { Footer } from "./Footer";
+import { LabsLogo } from "./LabsLogo";
 
 export const Landing = () => {
   const context = useContext(AppContext);
@@ -240,22 +241,37 @@ export const Landing = () => {
               </div>
             </div>
             <div className="col-lg">
-            <div style={{
-              display: `flex`,
-              justifyContent: `center`,
-              marginTop: `5%`
-            }}>
-            <p style={{
-              fontSize: `21px`,
-              fontWeight: `600`,
-              marginRight: `10px`
-            }} >
-              try me
-            </p>
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path className="try-me__arrow" fill-rule="evenodd" clip-rule="evenodd" d="M16.8246 0H10.4153V16.1029H0L13.5964 27.9997L27.1927 16.1029H16.8246V0Z"/>
-              </svg>
-            </div>
+              <div
+                style={{
+                  display: `flex`,
+                  justifyContent: `center`,
+                  marginTop: `5%`,
+                }}
+              >
+                <p
+                  style={{
+                    fontSize: `21px`,
+                    fontWeight: `600`,
+                    marginRight: `10px`,
+                  }}
+                >
+                  try me
+                </p>
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    className="try-me__arrow"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.8246 0H10.4153V16.1029H0L13.5964 27.9997L27.1927 16.1029H16.8246V0Z"
+                  />
+                </svg>
+              </div>
               <div
                 className="calculator"
                 style={{
@@ -265,9 +281,12 @@ export const Landing = () => {
                 id="tipit-preview"
               >
                 <span className="calculator__top"></span>
-                <div className="w-100" style={{
-                  overflow: `hidden`
-                }}>
+                <div
+                  className="w-100"
+                  style={{
+                    overflow: `hidden`,
+                  }}
+                >
                   <Header />
                   <Calculator />
                   <Footer />
@@ -280,17 +299,8 @@ export const Landing = () => {
       </main>
       <footer className="footer">
         <div className="container">
-          <p className="footer__text">Powered by</p>
           <a href="https://www.savaslabs.com/">
-            <img
-              src={
-                context.theme === "light"
-                  ? require("../assets/savas-logo-name.svg")
-                  : require("../assets/savas-logo-name-dark.svg")
-              }
-              alt={"Savas labs logo"}
-              height="40"
-            />
+            <LabsLogo />
           </a>
         </div>
       </footer>

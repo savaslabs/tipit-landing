@@ -6,10 +6,6 @@ body {
   color: #ffffff;
 }
 
-.footer {
-  background-color: #252525;
-}
-
 .button {
   background-color: #313131;
   color: #ffffff;
@@ -33,5 +29,31 @@ body {
 }
 
 .try-me__arrow {
-  fill: #FFFFFF;
+  fill: #ffffff;
+}
+
+/* Logo styles */
+#logo .text,
+.goggles,
+.no-glare,
+.ava-outline {
+  fill: white;
+}
+
+#logo .goggles {
+  fill: #f35a69;
+}
+
+#logo .ava {
+  fill: #221c35;
+}
+
+#logo .glare {
+  fill: white;
+  transition: transform 0.6s;
+  transform: translateX(-200px);
+}
+
+#logo:hover .glare {
+  transform: translateX(200px);
 }

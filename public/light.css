@@ -1,5 +1,5 @@
 body {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .main {
@@ -7,30 +7,51 @@ body {
 }
 
 .button {
-    background-color: #000000;
-    color: #FFFFFF;
-}
-
-.footer {
-  background-color: #FFFFFF;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .footer__text {
-    color: #000000;
+  color: #000000;
 }
 
 .calculator {
-	border: 10px solid #000000;
+  border: 10px solid #000000;
 }
 
 .calculator__top {
-	background-color: #000000;
+  background-color: #000000;
 }
 
 .calculator__app {
-	border: 10px solid #FFFFFF;
+  border: 10px solid #ffffff;
 }
 
 .try-me__arrow {
   fill: #000000;
+}
+
+/* Logo styles */
+#logo .text,
+.goggles,
+.no-glare {
+  fill: #f35a69;
+}
+
+#logo .goggles {
+  fill: #f35a69;
+}
+
+#logo .ava {
+  fill: #221c35;
+}
+
+#logo .glare {
+  fill: white;
+  transition: transform 0.6s;
+  transform: translateX(-200px);
+}
+
+#logo:hover .glare {
+  transform: translateX(200px);
 }
