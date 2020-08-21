@@ -1,25 +1,23 @@
 {
   "files": {
     "main.css": "/tipit-landing/static/css/main.55d8e6aa.chunk.css",
-    "main.js": "/tipit-landing/static/js/main.8f091d88.chunk.js",
-    "main.js.map": "/tipit-landing/static/js/main.8f091d88.chunk.js.map",
+    "main.js": "/tipit-landing/static/js/main.d022e768.chunk.js",
+    "main.js.map": "/tipit-landing/static/js/main.d022e768.chunk.js.map",
     "runtime-main.js": "/tipit-landing/static/js/runtime-main.92b91ad6.js",
     "runtime-main.js.map": "/tipit-landing/static/js/runtime-main.92b91ad6.js.map",
-    "static/js/2.76b8bf9d.chunk.js": "/tipit-landing/static/js/2.76b8bf9d.chunk.js",
-    "static/js/2.76b8bf9d.chunk.js.map": "/tipit-landing/static/js/2.76b8bf9d.chunk.js.map",
+    "static/js/2.b829f711.chunk.js": "/tipit-landing/static/js/2.b829f711.chunk.js",
+    "static/js/2.b829f711.chunk.js.map": "/tipit-landing/static/js/2.b829f711.chunk.js.map",
     "index.html": "/tipit-landing/index.html",
-    "precache-manifest.cb7251e3b9a2d040340f5b5482743b89.js": "/tipit-landing/precache-manifest.cb7251e3b9a2d040340f5b5482743b89.js",
+    "precache-manifest.30d5fee051cebcc69a92d425fccedc98.js": "/tipit-landing/precache-manifest.30d5fee051cebcc69a92d425fccedc98.js",
     "service-worker.js": "/tipit-landing/service-worker.js",
     "static/css/main.55d8e6aa.chunk.css.map": "/tipit-landing/static/css/main.55d8e6aa.chunk.css.map",
-    "static/js/2.76b8bf9d.chunk.js.LICENSE.txt": "/tipit-landing/static/js/2.76b8bf9d.chunk.js.LICENSE.txt",
+    "static/js/2.b829f711.chunk.js.LICENSE.txt": "/tipit-landing/static/js/2.b829f711.chunk.js.LICENSE.txt",
     "static/media/ava-blue.svg": "/tipit-landing/static/media/ava-blue.256311d1.svg",
     "static/media/dashes-white.svg": "/tipit-landing/static/media/dashes-white.69f83b20.svg",
     "static/media/dashes.svg": "/tipit-landing/static/media/dashes.188e66f7.svg",
     "static/media/info-white.svg": "/tipit-landing/static/media/info-white.023d2d3e.svg",
     "static/media/info.svg": "/tipit-landing/static/media/info.a21bafa4.svg",
     "static/media/labs.svg": "/tipit-landing/static/media/labs.c7c96ed0.svg",
-    "static/media/savas-logo-name-dark.svg": "/tipit-landing/static/media/savas-logo-name-dark.aae17549.svg",
-    "static/media/savas-logo-name.svg": "/tipit-landing/static/media/savas-logo-name.17211e2b.svg",
     "static/media/settings-white.svg": "/tipit-landing/static/media/settings-white.89059317.svg",
     "static/media/settings.svg": "/tipit-landing/static/media/settings.6ae6bc54.svg",
     "static/media/x-close-pink.svg": "/tipit-landing/static/media/x-close-pink.af3523aa.svg",
@@ -27,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.92b91ad6.js",
-    "static/js/2.76b8bf9d.chunk.js",
+    "static/js/2.b829f711.chunk.js",
     "static/css/main.55d8e6aa.chunk.css",
-    "static/js/main.8f091d88.chunk.js"
+    "static/js/main.d022e768.chunk.js"
   ]
 }
