@@ -38,20 +38,20 @@ body {
   fill: #f35a69;
 }
 
-#logo .goggles {
-  fill: #f35a69;
-}
-
 #logo .ava {
   fill: #221c35;
 }
 
+#logo .goggles,
+.glare {
+  fill: #f35a69;
+}
+
 #logo .glare {
-  fill: white;
-  transition: transform 0.6s;
-  transform: translateX(-200px);
+  transition: transform 0.4s;
+  transform: translateX(-30%);
 }
 
 #logo:hover .glare {
-  transform: translateX(200px);
+  transform: translateX(30%);
 }
