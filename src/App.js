@@ -1,14 +1,8 @@
 import React, { useState, useEffect } from "react";
-import ReactGA from "react-ga";
 import AppContext, { useTheme } from "./components/AppContext";
 import { Landing } from "./components/Landing";
 
 export const App = () => {
-  useEffect(() => {
-    ReactGA.initialize("UA-61514316-4");
-    ReactGA.pageview(window.location.pathname);
-  }, []);
-
   const _storeData = () => {
     try {
       localStorage.clear();
