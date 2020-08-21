@@ -289,7 +289,6 @@ export const Landing = () => {
                 >
                   <Header />
                   <Calculator />
-                  <Footer />
                 </div>
               </div>
             </div>
