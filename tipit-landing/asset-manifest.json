@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/tipit-landing/static/css/main.55d8e6aa.chunk.css",
-    "main.js": "/tipit-landing/static/js/main.d022e768.chunk.js",
-    "main.js.map": "/tipit-landing/static/js/main.d022e768.chunk.js.map",
+    "main.js": "/tipit-landing/static/js/main.85f69b5a.chunk.js",
+    "main.js.map": "/tipit-landing/static/js/main.85f69b5a.chunk.js.map",
     "runtime-main.js": "/tipit-landing/static/js/runtime-main.92b91ad6.js",
     "runtime-main.js.map": "/tipit-landing/static/js/runtime-main.92b91ad6.js.map",
     "static/js/2.b829f711.chunk.js": "/tipit-landing/static/js/2.b829f711.chunk.js",
     "static/js/2.b829f711.chunk.js.map": "/tipit-landing/static/js/2.b829f711.chunk.js.map",
     "index.html": "/tipit-landing/index.html",
-    "precache-manifest.30d5fee051cebcc69a92d425fccedc98.js": "/tipit-landing/precache-manifest.30d5fee051cebcc69a92d425fccedc98.js",
+    "precache-manifest.cdb47d053364dd8e6a94b860ca290029.js": "/tipit-landing/precache-manifest.cdb47d053364dd8e6a94b860ca290029.js",
     "service-worker.js": "/tipit-landing/service-worker.js",
     "static/css/main.55d8e6aa.chunk.css.map": "/tipit-landing/static/css/main.55d8e6aa.chunk.css.map",
     "static/js/2.b829f711.chunk.js.LICENSE.txt": "/tipit-landing/static/js/2.b829f711.chunk.js.LICENSE.txt",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.92b91ad6.js",
     "static/js/2.b829f711.chunk.js",
     "static/css/main.55d8e6aa.chunk.css",
-    "static/js/main.d022e768.chunk.js"
+    "static/js/main.85f69b5a.chunk.js"
   ]
 }
