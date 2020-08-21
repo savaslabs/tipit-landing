@@ -5,7 +5,7 @@ import { Landing } from "./components/Landing";
 
 export const App = () => {
   useEffect(() => {
-    ReactGA.initialize("UA-176008925-1");
+    ReactGA.initialize("UA-61514316-4");
     ReactGA.pageview(window.location.pathname);
   }, []);
 
