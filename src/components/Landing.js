@@ -297,7 +297,7 @@ export const Landing = () => {
         <canvas id="canvas" ref={canvasRef}></canvas>
       </main>
       <footer className="footer">
-        <div className="container">
+        <div className="container" style={{ paddingLeft: 0 }}>
           <a href="https://www.savaslabs.com/">
             <LabsLogo />
           </a>
