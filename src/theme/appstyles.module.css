@@ -136,11 +136,24 @@ a:focus {
   overflow: hidden;
   overflow-y: scroll;
   height: calc(100vh - 500px);
-  width: calc(100% + 34px);
-  padding-right: 17px;
+  width: 100%;
+  /* Hide scrollbar */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-td:last-of-type {
+/* Hide scrollbar for Chrome, Safari and Opera */
+.tableWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.tableWrapper td,
+th {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.tableWrapper td:last-of-type {
   text-align: right;
 }
 

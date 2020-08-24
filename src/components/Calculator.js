@@ -169,8 +169,6 @@ export const Calculator = () => {
   return (
     <div
       style={{
-        marginLeft: 5,
-        marginRight: 5,
         backgroundColor: colors.background,
       }}
     >
