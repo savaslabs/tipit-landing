@@ -220,13 +220,12 @@ export const Calculator = () => {
             minHeight: 50,
             paddingTop: 10,
             display: "flex",
-            alignItems: "flex-end",
           }}
         >
           {results && (
             <div
               className={styles.inputRow}
-              style={{ width: "100%", alignItems: "flex-end" }}
+              style={{ width: "100%", alignItems: "center" }}
             >
               <div className={styles.normalText} style={{ textAlign: "left" }}>
                 {message}
