@@ -106,7 +106,7 @@ th:last-of-type {
 
 tr {
   font-size: 18;
-  line-height: 45px;
+  line-height: 40px;
 }
 
 tr:hover {
@@ -134,7 +134,8 @@ a:focus {
 .tableWrapper {
   overflow: hidden;
   overflow-y: scroll;
-  height: calc(100vh - 500px);
+  height: calc(100vh - 400px);
+  min-height: 200px;
   width: 100%;
   /* Hide scrollbar */
   -ms-overflow-style: none; /* IE and Edge */
@@ -146,19 +147,13 @@ a:focus {
   display: none;
 }
 
-.tableWrapper td,
-th {
+.tableWrapper td:first-of-type,
+th:first-of-type {
   padding-left: 10px;
-  padding-right: 10px;
 }
 
-.tableWrapper td:last-of-type {
+.tableWrapper td:last-of-type,
+th:last-of-type {
   text-align: right;
-}
-
-@media screen and (max-width: 500px) {
-  th:last-of-type,
-  td:last-of-type {
-    text-align: left;
-  }
+  padding-right: 10px;
 }
