@@ -142,7 +142,7 @@ h1 {
 }
 
 .main {
-  height: calc(100vh - 100px);
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -165,21 +165,6 @@ h1 {
   font-weight: 600;
   border-radius: 10px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.footer {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 0 10px;
-}
-
-.footer__text {
-  font-size: 19px;
-  line-height: 28px;
-  font-weight: 600;
-  margin: 0;
 }
 
 #canvas {
@@ -270,7 +255,7 @@ input.toggle-input {
   border-radius: 14px;
   position: relative;
   height: calc(100vh - 200px);
-  min-height: 460px;
+  min-height: 600px;
   max-height: 100%;
   width: calc((100vh - 200px) * 0.5);
   min-width: 325px;
@@ -307,6 +292,11 @@ input.toggle-input {
 
 canvas {
   overflow: hidden;
+}
+
+.footer--mobile {
+  padding: 16px;
+  margin-top: 16px;
 }
 
 @media screen and (max-width: 991px) {

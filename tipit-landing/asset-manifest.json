@@ -1,22 +1,24 @@
 {
   "files": {
     "main.css": "/tipit-landing/static/css/main.d7646056.chunk.css",
-    "main.js": "/tipit-landing/static/js/main.a91594e2.chunk.js",
-    "main.js.map": "/tipit-landing/static/js/main.a91594e2.chunk.js.map",
+    "main.js": "/tipit-landing/static/js/main.c516b5f5.chunk.js",
+    "main.js.map": "/tipit-landing/static/js/main.c516b5f5.chunk.js.map",
     "runtime-main.js": "/tipit-landing/static/js/runtime-main.92b91ad6.js",
     "runtime-main.js.map": "/tipit-landing/static/js/runtime-main.92b91ad6.js.map",
-    "static/js/2.b829f711.chunk.js": "/tipit-landing/static/js/2.b829f711.chunk.js",
-    "static/js/2.b829f711.chunk.js.map": "/tipit-landing/static/js/2.b829f711.chunk.js.map",
+    "static/js/2.76b8bf9d.chunk.js": "/tipit-landing/static/js/2.76b8bf9d.chunk.js",
+    "static/js/2.76b8bf9d.chunk.js.map": "/tipit-landing/static/js/2.76b8bf9d.chunk.js.map",
     "index.html": "/tipit-landing/index.html",
-    "precache-manifest.141499521e8714eb1abe0866eb221999.js": "/tipit-landing/precache-manifest.141499521e8714eb1abe0866eb221999.js",
+    "precache-manifest.240c451b1ffe442997f6c8c4d8db3f59.js": "/tipit-landing/precache-manifest.240c451b1ffe442997f6c8c4d8db3f59.js",
     "service-worker.js": "/tipit-landing/service-worker.js",
     "static/css/main.d7646056.chunk.css.map": "/tipit-landing/static/css/main.d7646056.chunk.css.map",
-    "static/js/2.b829f711.chunk.js.LICENSE.txt": "/tipit-landing/static/js/2.b829f711.chunk.js.LICENSE.txt",
+    "static/js/2.76b8bf9d.chunk.js.LICENSE.txt": "/tipit-landing/static/js/2.76b8bf9d.chunk.js.LICENSE.txt",
     "static/media/ava-blue.svg": "/tipit-landing/static/media/ava-blue.256311d1.svg",
     "static/media/dashes-white.svg": "/tipit-landing/static/media/dashes-white.69f83b20.svg",
     "static/media/dashes.svg": "/tipit-landing/static/media/dashes.188e66f7.svg",
     "static/media/info-white.svg": "/tipit-landing/static/media/info-white.023d2d3e.svg",
     "static/media/info.svg": "/tipit-landing/static/media/info.a21bafa4.svg",
+    "static/media/labs-logo-mobile-dark.svg": "/tipit-landing/static/media/labs-logo-mobile-dark.c1dc4382.svg",
+    "static/media/labs-logo-mobile-light.svg": "/tipit-landing/static/media/labs-logo-mobile-light.8ff211f5.svg",
     "static/media/labs.svg": "/tipit-landing/static/media/labs.c7c96ed0.svg",
     "static/media/settings-white.svg": "/tipit-landing/static/media/settings-white.89059317.svg",
     "static/media/settings.svg": "/tipit-landing/static/media/settings.6ae6bc54.svg",
@@ -25,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.92b91ad6.js",
-    "static/js/2.b829f711.chunk.js",
+    "static/js/2.76b8bf9d.chunk.js",
     "static/css/main.d7646056.chunk.css",
-    "static/js/main.a91594e2.chunk.js"
+    "static/js/main.c516b5f5.chunk.js"
   ]
 }
