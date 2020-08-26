@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "856f0d74b2ad6948d569491ea8a2952d",
+    "revision": "5879cb4698d50df7b0f44b3be65002e3",
     "url": "/tipit-landing/index.html"
   },
   {
