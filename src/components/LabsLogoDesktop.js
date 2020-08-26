@@ -1,6 +1,6 @@
 import React from "react";
 
-export const LabsLogo = () => {
+export const LabsLogoDesktop = () => {
   return (
     <svg
       id="logo"

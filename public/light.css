@@ -55,3 +55,7 @@ body {
 #logo:hover .glare {
   transform: translateX(30%);
 }
+
+.footer--mobile {
+  background-color: #ffffff;
+}

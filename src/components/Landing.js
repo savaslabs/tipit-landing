@@ -2,8 +2,7 @@ import React, { useContext, useState } from "react";
 import AppContext from "./AppContext";
 import { Header } from "./Header";
 import { Calculator } from "./Calculator";
-import { Footer } from "./Footer";
-import { LabsLogo } from "./LabsLogo";
+import { LabsLogoDesktop } from "./LabsLogoDesktop";
 
 export const Landing = () => {
   const context = useContext(AppContext);
@@ -297,9 +296,21 @@ export const Landing = () => {
         <canvas id="canvas" ref={canvasRef}></canvas>
       </main>
       <footer className="footer">
-        <div className="container" style={{ paddingLeft: 0 }}>
+        <div className="d-none d-lg-block container text-left">
           <a href="https://www.savaslabs.com/">
-            <LabsLogo />
+            <LabsLogoDesktop />
+          </a>
+        </div>
+        <div className="d-lg-none text-center footer--mobile">
+          <a href="https://www.savaslabs.com/">
+            <img
+              src={
+                context.theme === "light"
+                  ? require("../assets/labs-logo-mobile-light.svg")
+                  : require("../assets/labs-logo-mobile-dark.svg")
+              }
+              alt="dashes"
+            />
           </a>
         </div>
       </footer>
