@@ -298,18 +298,26 @@ export const Landing = () => {
       <footer className="footer">
         <div className="d-none d-lg-block container text-left">
           <a href="https://www.savaslabs.com/">
+            <span className="sr-only">
+              Labs: A place for experiementation at Savas Labs. Links to
+              savaslabs.com
+            </span>
             <LabsLogoDesktop />
           </a>
         </div>
         <div className="d-lg-none text-center footer--mobile">
           <a href="https://www.savaslabs.com/">
+            <span className="sr-only">
+              Labs: A place for experiementation at Savas Labs. Links to
+              savaslabs.com
+            </span>
             <img
               src={
                 context.theme === "light"
                   ? require("../assets/labs-logo-mobile-light.svg")
                   : require("../assets/labs-logo-mobile-dark.svg")
               }
-              alt="dashes"
+              alt="Labs by Savas Labs logo"
             />
           </a>
         </div>
