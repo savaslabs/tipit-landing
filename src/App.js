@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import AppContext, { useTheme } from "./components/AppContext";
 import { Landing } from "./components/Landing";
+import ReactGA from "react-ga";
+ReactGA.initialize("UA-61514316-4");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 export const App = () => {
   const _storeData = () => {
@@ -40,11 +43,11 @@ export const App = () => {
   const [defaultTipHigh, setDefaultTipHigh] = useState("25");
   const [theme, setTheme] = useState("light");
 
-  const updateTipLowContext = input => {
+  const updateTipLowContext = (input) => {
     setDefaultTipLow(input);
   };
 
-  const updateTipHighContext = input => {
+  const updateTipHighContext = (input) => {
     setDefaultTipHigh(input);
   };
 
