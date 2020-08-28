@@ -95,20 +95,20 @@ export const Landing = () => {
     <>
       <main className="main">
         <div className="container h-100">
-          <div className="row h-100 justify-space-between">
-            <div className="col-lg-7 my-auto">
-              <h1 className="my-4">tipit</h1>
-              <p className="main__text pb-4">
-                Why leave boring tip amounts when you can tip in palindrome?
-                Excellent question! Tipit quickly calculates gratuity that will
-                add a little bit of numerical fun to your next bill.
-              </p>
-              <div className="row w-100 my-auto justify-content-between">
-                <div className="col-lg-6 highlight__text my-auto">
-                  Coming Soon to the <br />
-                  App Store & Google Play
-                </div>
-                <div className="col-lg m-auto">
+          <div className="row align-items-stretch h-100">
+            <div className="col-lg-7 d-flex flex-column justify-content-around">
+              <div className="my-auto">
+                <h1 className="mt-5 mb-4">tipit</h1>
+                <p className="main__text mt-1 pb-4">
+                  Why leave boring tip amounts when you can tip in palindrome?
+                  Excellent question! Tipit quickly calculates gratuity that
+                  will add a little bit of numerical fun to your next bill.
+                </p>
+                <div className="row ml-0 mt-4">
+                  <div className="highlight__text">
+                    Coming Soon to the <br />
+                    App Store & Google Play
+                  </div>
                   <div className="toggle__wrapper">
                     <input
                       className="toggle-input"
@@ -238,6 +238,17 @@ export const Landing = () => {
                   </div>
                 </div>
               </div>
+              <footer className="d-none d-lg-block footer--desktop">
+                <div className="container text-left">
+                  <a href="https://www.savaslabs.com/">
+                    <span className="sr-only">
+                      Labs: A place for experiementation at Savas Labs. Links to
+                      savaslabs.com
+                    </span>
+                    <LabsLogoDesktop />
+                  </a>
+                </div>
+              </footer>
             </div>
             <div className="col-lg">
               <div
@@ -295,16 +306,7 @@ export const Landing = () => {
         </div>
         <canvas id="canvas" ref={canvasRef}></canvas>
       </main>
-      <footer className="footer">
-        <div className="d-none d-lg-block container text-left">
-          <a href="https://www.savaslabs.com/">
-            <span className="sr-only">
-              Labs: A place for experiementation at Savas Labs. Links to
-              savaslabs.com
-            </span>
-            <LabsLogoDesktop />
-          </a>
-        </div>
+      <footer className="footer align-self-end">
         <div className="d-lg-none text-center footer--mobile">
           <a href="https://www.savaslabs.com/">
             <span className="sr-only">
