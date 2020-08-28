@@ -97,7 +97,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 hgroup,
 menu,
@@ -142,7 +141,7 @@ h1 {
 }
 
 .main {
-  height: 100%;
+  height: 100vh;
   overflow-x: hidden;
 }
 
@@ -255,7 +254,7 @@ input.toggle-input {
   border-radius: 14px;
   position: relative;
   height: calc(100vh - 200px);
-  min-height: 600px;
+  min-height: 540px;
   max-height: 100%;
   width: calc((100vh - 200px) * 0.5);
   min-width: 325px;
@@ -299,16 +298,26 @@ canvas {
   margin-top: 16px;
 }
 
+.footer--desktop {
+  margin-left: -26px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 @media screen and (max-width: 991px) {
   .toggle__wrapper {
     text-align: left;
     margin-top: 20px;
     margin-left: -8px;
   }
+
+  .main {
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .calculator {
-    min-width: 90%;
+    min-width: 100%;
   }
 }

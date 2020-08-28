@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tipit-landing/precache-manifest.2ad0659b3e260a2a2a94bfe5d968e1f1.js"
+  "/tipit-landing/precache-manifest.1a58f743402bbc6438e82fe8fe271d90.js"
 );
 
 self.addEventListener('message', (event) => {
