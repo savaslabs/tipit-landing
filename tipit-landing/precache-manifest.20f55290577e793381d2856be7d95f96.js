@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d148655dc85e9ff3322630912bcb6ef0",
+    "revision": "fee7f8efa6e308d16a662a35ff5de7ec",
     "url": "/tipit-landing/index.html"
   },
   {
-    "revision": "0323b35b15f7354744eb",
+    "revision": "2a8b963f598e5b1336f1",
     "url": "/tipit-landing/static/css/main.d7646056.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tipit-landing/static/js/2.b901d505.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0323b35b15f7354744eb",
-    "url": "/tipit-landing/static/js/main.420e7008.chunk.js"
+    "revision": "2a8b963f598e5b1336f1",
+    "url": "/tipit-landing/static/js/main.0afed8ec.chunk.js"
   },
   {
     "revision": "b9382f343e820437dfe6",
