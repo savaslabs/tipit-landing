@@ -240,7 +240,7 @@ export const Landing = () => {
               </div>
               <footer className="d-none d-lg-block footer--desktop">
                 <div className="container text-left">
-                  <a href="https://www.savaslabs.com/">
+                  <a href="https://www.savaslabs.com/labs">
                     <span className="sr-only">
                       Labs: A place for experiementation at Savas Labs. Links to
                       savaslabs.com
@@ -308,7 +308,7 @@ export const Landing = () => {
       </main>
       <footer className="footer align-self-end">
         <div className="d-lg-none text-center footer--mobile">
-          <a href="https://www.savaslabs.com/">
+          <a href="https://www.savaslabs.com/labs">
             <span className="sr-only">
               Labs: A place for experiementation at Savas Labs. Links to
               savaslabs.com
